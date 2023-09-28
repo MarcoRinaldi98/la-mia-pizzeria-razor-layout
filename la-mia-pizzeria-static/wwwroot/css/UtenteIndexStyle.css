@@ -1,0 +1,65 @@
+﻿/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    height: 100px;
+    background-color: #1d1d1d;
+}
+
+footer {
+    height: 50px;
+    background-color: #1d1d1d;
+}
+
+main {
+    height: calc(100% - 150px);
+    overflow-y: scroll;
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-item:hover .nav-link {
+    color: #f3a446;
+}
+
+h1 {
+    color: #f3a446;
+}
+
+.card img {
+    aspect-ratio: 4 / 3;
+}
+
+footer small {
+    letter-spacing: .2rem;
+}
+
+
+/* MEDIA QUERY */
+@media(min-width:768px) {
+    .navbar-nav {
+        margin-left: -120px;
+    }
+}
