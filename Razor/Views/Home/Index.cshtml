@@ -21,6 +21,18 @@
             2. Creare una funzione che stampa la somma dei numeri che vanno da 1 a n (con n passato come parametro - n incluso) <br />
             Stampare dentro uno span il risultato.
         </h5>
+        @{
+            int CalcolaSomma(int numero)
+            {
+                int somma = 0;
+                for (int i = 1; i <= numero; i++)
+                {
+                    somma += i;
+                }
+                return somma;
+            }
+        }
+        <p> La somma dei numeri che vanno da 1 a 5 è @CalcolaSomma(5)! </p>
     </div>
 
     <div>
