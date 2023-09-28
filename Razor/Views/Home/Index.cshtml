@@ -39,6 +39,22 @@
         <h5>
             3. Contare quante volte la lettera a è presente nalla frase "nel mezzo del cammin di nostra vita" e stampare questo valore in pagina
         </h5>
+        @{
+            int ContaOccorrenze(char carattere)
+            {
+                string testo = "nel mezzo del cammin di nostra vita";
+                int conteggio = 0;
+                foreach (char c in testo)
+                {
+                    if (c == carattere)
+                    {
+                        conteggio++;
+                    }
+                }
+                return conteggio;
+            }
+        }
+        <p> La lettera "a" è presente nella frase "nel mezzo del cammin di nostra vita" ben @ContaOccorrenze('a') volte! </p>
     </div>
 
     <div>
