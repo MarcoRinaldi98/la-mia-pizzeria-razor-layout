@@ -2,15 +2,8 @@
     color: #f3a446;
 }
 
-tr td:nth-child(2), tr td:nth-child(4) {
-    text-align: center;
-}
-
-tr td:nth-child(3) {
-    text-align: left;
-}
-
-tr img {
+tr td img {
+    width: 250px;
     aspect-ratio: 4 / 3;
 }
 
